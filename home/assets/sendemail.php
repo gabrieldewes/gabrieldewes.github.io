@@ -7,5 +7,5 @@ $name=$_POST["name"];
 $email=$_POST["email"];
 $mensagem=$_POST["mensagem"];
 
-mail ("$emaildest","Contato do LABS","Nome: $name\n E-mail: $email\n Mensagem: $mensagem\n\n\n ","From: $name<$email>");
+mail ("$emaildest","Contato do Site","Nome: $name\n E-mail: $email\n Mensagem: $mensagem\n\n\n ","From: $name<$email>");
 ?>

@@ -21,12 +21,13 @@
 
 				jQuery.ajax({
 					type: "POST",
-					url: "/assets/sendemail.php",
+					url: "/home/assets/sendemail.php",
 					data: dados,
 					success: function( data )
 					{
 						$('#ajax_form').trigger("reset");
 						subscribe();
+						disableForm();
 					}
 				});
 				return false;
