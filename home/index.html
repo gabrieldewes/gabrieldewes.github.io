@@ -21,13 +21,17 @@
 
 				jQuery.ajax({
 					type: "POST",
-					url: "assets/sendemail.php",
+					url: "/assets/sendemail.php",
 					data: dados,
 					success: function( data )
 					{
 						$('#ajax_form').trigger("reset");
 						subscribe();
 						disableForm();
+					}
+					error: function ( data )
+					{
+						alert("deu pau");
 					}
 				});
 				return false;
@@ -129,15 +133,15 @@
 									document.write(new Date().getFullYear());
 								</script>
 								 Gabriel Dewes &middot; Made with <span class="footer-hearts">&#10084;</span> in North Coast by 
-								 <a href="https://twitter.com/gabbrieldewes" target="_blank"><span class="footer-twitter">@gabrieldewes</span></a>
+								 <a href="https://twitter.com/gabrielxdewes" target="_blank"><span class="footer-twitter">@gabrieldewes</span></a>
 							</p>
 						</div>
 						<div class="col-sm-6 text-right footer-right">
 
 							<div class="social text-right">
 								<a href="https://www.facebook.com/gabrieldewes" target="_blank"><i class="fa fa-2x fa-facebook"></i></a>
-								<a href="https://instagram.com/gabdewes" target="_blank"><i class="fa fa-2x fa-instagram"></i></a>
-								<a href="https://twitter.com/gabbrieldewes" target="_blank"><i class="fa fa-2x fa-twitter"></i></a>
+								<a href="https://instagram.com/gabrielxdewes" target="_blank"><i class="fa fa-2x fa-instagram"></i></a>
+								<a href="https://twitter.com/gabrielxdewes" target="_blank"><i class="fa fa-2x fa-twitter"></i></a>
 								<a href="https://github.com/gabrieldewes" target="_blank"><i class="fa fa-2x fa-github"></i></a>
 							</div>
 							
