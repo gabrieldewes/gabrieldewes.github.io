@@ -1,0 +1,374 @@
+html { 
+    background: url(../img/bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    background-color: transparent;
+    font-family: 'Lato', sans-serif;
+    margin: auto;
+}
+
+/* Navbar */
+
+.navbar-inverse .container {
+	min-height: 65px;
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.navbar-inverse {
+	background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: rgba(255,255,255,0.5);
+	padding: 23px 0 15px 15px;
+	transition: color 0.2s;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+	color: rgba(255,255,255,1);
+	transition: color 0.2s;
+}
+
+.navbar-inverse .navbar-nav > li > a > i {
+	font-size: 20px;
+}
+
+.logo {
+    padding-top: 75px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+.logo img {
+    width: 125px;
+}
+
+.main-header h1 {
+    margin-top: 75px;
+    text-align: center;
+    color: white;
+}
+
+.main-header p.lead {
+	text-align: center;
+	color: rgba(255,255,255,0.5);
+    padding-top: 10px;
+}
+
+@media (min-width: 768px) {
+    .container-mini {
+        max-width: 960px;
+    }
+}
+
+.main-header hr {
+	background-color: rgba(255,255,255,0);
+	height: 1px; 
+	border: 0;
+	margin: 75px 15px 0 15px;
+}
+
+/* Subscribe */
+.subscribe {
+	margin-top: 100px;
+}
+
+.subscribe p.lead {
+	color: rgba(255,255,255,0.8);
+	text-align: left;
+	padding-top: 10px;
+}
+
+.subscribe p {
+	color: rgba(255,255,255,0.5);
+	margin-top: -15px;
+}
+
+.subscribe .form-control {
+	background-color: rgba(0,0,0,0);
+	border: 1px solid rgba(255,255,255,0.1);
+	font-weight: 400;
+	box-shadow: none;
+	color: white;
+}
+
+.subscribe .form-control::-moz-placeholder {
+	color: rgba(255,255,255,0.5);
+	opacity: 1;
+}
+
+.subscribe .form-control:focus {
+	border-color: rgba(139, 96, 232, 1);
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0), 0 0 8px rgba(255, 255, 255, 0) !important;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0), 0 0 8px rgba(255, 255, 255, 0) !important;
+}
+
+
+/* Buttons*/
+
+.subscribe .btn-primary {
+	background-color: rgba(139, 96, 232, 0.5);
+	border-color: rgba(139, 96, 232, 0.5);
+    border-radius: 50px;
+    transition: all 0.2s;
+}
+
+.subscribe .btn-primary:hover,
+.subscribe .btn-primary:focus {
+	color: #fff;
+	background-color: rgba(139, 96, 232, 100);
+	background-color: rgba(139, 96, 232, 100);
+    transition: all 0.2s;
+}
+
+.alert {
+    margin-top: 25px;
+}
+
+.alert-success {
+    background-color: rgba(64, 254, 197, 0.25);
+    border: 1px solid #40fec5;
+    border-radius: 6px;
+    color: white;
+}
+
+.alert-error {
+    background-color: rgba(231, 76, 60, 0.25);
+	border: 1px solid #ec3930;
+    border-radius: 6px;
+    color: white;
+}
+
+#alertSuccess, #alertError, #alertSuccess2, #alertError2 {
+    display: none;
+}
+
+
+
+/* ---- reset ---- */
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: -5;
+}
+
+/* Aurous screenshot */
+.screenshot {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.screenshot img {
+	width: 100%;
+	border-radius: 5px;
+	box-shadow: 0 0 50px rgba(0,0,0,0.5);
+}
+
+.teaser {
+	background: rgba(0,0,0,0);
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.99) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,0.99)));
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.99) 100%);
+	background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.99) 100%);
+	background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.99) 100%);
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.99) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+}
+
+/* Section globals */
+
+section {
+	padding: 100px 0;
+	color: rgba(255,255,255,0.9);
+}
+
+section h2 {
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+
+section h3 {
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 10px;
+	margin-top: 40px;
+}
+
+section h2 img {
+	margin-right: 20px;
+	margin-top: -6px;
+}
+
+section .section-image-1 {
+	padding-right: 40px;
+}
+
+section .section-image img {
+	max-width: 100%;
+}
+
+section p {
+	font-size: 18px;
+	color: rgba(255,255,255,0.75);
+	line-height: 1.5;
+}
+
+section.average {
+	margin-top: 50px;
+}
+
+section.average h2 {
+	color: #24e174;
+}
+
+section.power h2 {
+	color: #f8a521;
+}
+
+section.geeks h2 {
+	color: #ec3930;
+}
+
+/* Ask on Twitter */
+.ask-on-twitter {
+	padding-top: 75px;
+	text-align: center;
+	background: url(../img/teaser-question.png) no-repeat 0 0;
+	background-position: center;
+	height: 305px;
+}
+
+.ask-on-twitter h1 {
+	text-align: center;
+	color: white;
+}
+
+.ask-on-twitter .btn-twitter {
+	margin-top: 25px;
+	background-color: transparent;
+	border-color: #55ACEE;
+	color: #55ACEE;
+	transition: all 0.2;
+}
+
+.ask-on-twitter .btn-twitter:hover,
+.ask-on-twitter .btn-twitter:focus {
+	margin-top: 25px;
+	background-color: rgba(85, 172, 238, 0.25);
+	border-color: #55ACEE;
+	color: #55ACEE;
+	transition: all 0.2s;
+}
+
+
+/* Footer */
+
+footer {
+	margin-top: 100px;
+}
+
+.subscribe-footer.subscribe {
+	margin-top: 15px;
+}
+
+footer hr {
+	background-color: rgba(255,255,255,0.1);
+	height: 1px; 
+	border: 0;
+}
+
+footer p {
+	color: rgba(255,255,255,0.5);
+}
+
+footer .social a {
+	color: rgba(255, 255, 255, 0.5);
+	transition: color 0.3s;
+	margin-right: 15px;
+}
+
+footer .social a:hover,
+footer .social a:focus {
+	color: rgba(255, 255, 255, 1);
+	transition: color 0.3s;
+}
+
+footer .social i {
+	font-size: 20px;
+}
+
+footer {
+	padding-bottom: 15px;
+}
+
+footer .footer-hearts {
+	color: rgb(240, 90, 82);
+	margin: 0 3px;
+}
+
+footer .footer-twitter {
+	color: #55ACEE;
+}
+
+footer .footer-right {
+	padding-right: 0px;
+}
+
+.indiegogo-banner {
+	width: 100%;
+	background-color: rgba(235, 20, 120, 1);
+	color: white;
+	padding: 5px 0 5px 0;
+	border-radius: 0;
+	margin-top: 0;
+	overflow: hidden;
+}
+
+.indiegogo-banner p {
+	color: white;
+	margin-top: 5px;
+	margin-bottom: 0;
+	font-size: 16px;
+}
+
+.indiegogo-banner .btn-close i {
+	color: rgba(255,255,255,0.5);
+	margin-top: 10px;
+}
+
+.indiegogo-banner .btn-default {
+	background-color: white;
+	border-color: white;
+	color: rgba(235, 20, 120, 1);
+	margin-right: 15px;
+	font-size: 16px;
+}
+
+.indiegogo-banner .btn-default:hover,
+.indiegogo-banner .btn-default:focus {
+	background-color: rgba(255,255,255,0.95);
+	border-color: rgba(255,255,255,0.95);		
+}
+

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Gabriel Dewes</title>
+	    <meta name="description" content="">
+	    <meta name="keywords" content="">
+	    <meta name="author" content="Gabriel Dewes">
+	    
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/main.css" rel="stylesheet">
+		<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+		<link href="assets/css/google-fonts.css" rel="stylesheet">
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript">
+		jQuery(document).ready(function(){
+			jQuery('#ajax_form').submit(function(){
+				var dados = jQuery( this ).serialize();
+
+				jQuery.ajax({
+					type: "POST",
+					url: "/assets/sendemail.php",
+					data: dados,
+					success: function( data )
+					{
+						$('#ajax_form').trigger("reset");
+						subscribe();
+					}
+				});
+				return false;
+			});
+		});
+		</script>
+
+    </head>
+    <body>
+
+        <div id="particles-js"></div>
+        
+		<!--<nav class="navbar navbar-inverse navbar-static-top">
+			<div class="container">
+				<div class="navbar-header">
+					
+					<a class="navbar-brand" href="#"><img src="assets/img/labs_title.png" width="100px" alt=""></a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="https://www.facebook.com/gabrieldewes" target="_blank"><i class="fa fa-2x fa-facebook"></i></a></li>
+						<li><a href="https://instagram.com/gabdewes" target="_blank"><i class="fa fa-2x fa-instagram"></i></a></li>
+						<li><a href="https://twitter.com/gabbrieldewes" target="_blank"><i class="fa fa-2x fa-twitter"></i></a></li>
+						<li><a href="https://github.com/gabrieldewes" target="_blank"><i class="fa fa-2x fa-github"></i></a></li>
+					</ul>
+				</div>
+			</div> 
+		</nav> -->
+		<nav style="padding-top: 10%" />
+       
+        <div class="main-header container container-mini">
+            <h1>Bem-vindo</h1>
+            <p class="lead">_Developing> Web, Apps, Systems & Tailor-made Projects.</p>               
+        </div>
+                    
+        <div class="teaser" style="padding-top: 10%">
+			<div class="screenshot">
+				<div class="container">
+					<br/>
+					<br/>
+				</div>
+			</div>
+       	
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="subscribe">
+							<hr>
+							<div class="col-sm-4">
+								
+								<p class="lead">Mantenha contato</p>
+								<p>Conte-me como você chegou aqui.</p>
+							</div>
+							
+							<div class="col-sm-4">								  
+								<div class="col-ms-12">
+									<div class="input-group-lg">
+										<form action="" id="ajax_form" method="post">	
+											<input class="form-control input-lg" 
+												type="text" 
+												name="name" 
+												id="name"   
+												placeholder="seu nome" 
+												required="required">
+									
+											<input class="form-control input-lg" 
+												type="email" 
+												name="email" 
+												id="email" 
+												placeholder="seu e-mail" 
+												required="required">	
+											<textarea class="form-control input-lg"
+												name="mensagem" 
+												id="mensagem" 
+												placeholder="mensagem..." 
+												required="required"></textarea>
+												
+											<div align="right">
+							                	<input type="submit" 
+									                name="send" 
+									                value="Enviar" 
+									                id="submit" 
+									                class="btn btn-primary btn-md">
+							            	</div>
+							        	</form>							
+									</div>
+								</div>
+								<div id="alertSuccess" class="alert alert-success" role="alert"><strong>Obrigado!</strong> Seu e-mail foi enviado. Você será retornado o mais breve possível.</div>
+							</div>
+						</div>
+            		</div>
+					
+					<hr>
+					
+					<div class="row">
+						<div class="col-sm-6">
+							<p>&copy; 
+								<script type="text/javascript">
+									document.write(new Date().getFullYear());
+								</script>
+								 Gabriel Dewes &middot; Made with <span class="footer-hearts">&#10084;</span> in North Coast by 
+								 <a href="https://twitter.com/gabbrieldewes" target="_blank"><span class="footer-twitter">@gabrieldewes</span></a>
+							</p>
+						</div>
+						<div class="col-sm-6 text-right footer-right">
+
+							<div class="social text-right">
+								<a href="https://www.facebook.com/gabrieldewes" target="_blank"><i class="fa fa-2x fa-facebook"></i></a>
+								<a href="https://instagram.com/gabdewes" target="_blank"><i class="fa fa-2x fa-instagram"></i></a>
+								<a href="https://twitter.com/gabbrieldewes" target="_blank"><i class="fa fa-2x fa-twitter"></i></a>
+								<a href="https://github.com/gabrieldewes" target="_blank"><i class="fa fa-2x fa-github"></i></a>
+							</div>
+							
+						</div>
+					</div>
+					
+				</div>
+			</footer>
+       
+        </div>
+            
+
+        <script src="assets/js/jquery-1.11.3.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        
+        <script src="assets/js/particles.js"></script>
+        <script>
+            particlesJS.load('particles-js', 'assets/js/particlesjs-config.json', function() {
+                console.log('callback - particles.js config loaded');
+            });
+		</script>
+		
+		<script src="assets/js/scrollReveal.min.js"></script>
+		<script type="text/javascript">
+			(function($) {
+
+				'use strict';
+
+				window.sr= new scrollReveal({
+					reset: false,
+					move: '25px',
+					scale: {
+						direction: 'up',
+						power: '0%'
+					},
+					opacity: 0,
+					mobile: true
+				});
+
+			})();
+		</script>
+		<script src="assets/js/app.js"></script>
+    </body>
+</html>
