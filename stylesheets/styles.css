@@ -16,14 +16,14 @@
   font-family: 'Noto Sans';
   font-weight: 700;
   font-style: normal;
-  src: url('../fonts/Noto-Sans-700/Noto-Sans-700.eot');
-  src: url('../fonts/Noto-Sans-700/Noto-Sans-700.eot?#iefix') format('embedded-opentype'),
+  src: url('../stylesheets/fonts/Noto-Sans-700/Noto-Sans-700.eot');
+  src: url('../stylesheets/fonts/Noto-Sans-700/Noto-Sans-700.eot?#iefix') format('embedded-opentype'),
        local('Noto Sans Bold'),
        local('Noto-Sans-700'),
-       url('../fonts/Noto-Sans-700/Noto-Sans-700.woff2') format('woff2'),
-       url('../fonts/Noto-Sans-700/Noto-Sans-700.woff') format('woff'),
-       url('../fonts/Noto-Sans-700/Noto-Sans-700.ttf') format('truetype'),
-       url('../fonts/Noto-Sans-700/Noto-Sans-700.svg#NotoSans') format('svg');
+       url('../stylesheets/fonts/Noto-Sans-700/Noto-Sans-700.woff2') format('woff2'),
+       url('../stylesheets/fonts/Noto-Sans-700/Noto-Sans-700.woff') format('woff'),
+       url('../stylesheets/fonts/Noto-Sans-700/Noto-Sans-700.ttf') format('truetype'),
+       url('../stylesheets/fonts/Noto-Sans-700/Noto-Sans-700.svg#NotoSans') format('svg');
 }
 
 @font-face {
