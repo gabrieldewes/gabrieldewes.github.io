@@ -1,1 +1,1 @@
-(function(){var xhr=new XMLHttpRequest();xhr.onload=function(){};xhr.open("GET","https://northcoastdev.herokuapp.com/scripts/ajax.php");xhr.send();})()
+(function(){var xhr=new XMLHttpRequest();xhr.onload=function(){};xhr.open("GET","http://dewes.pe.hu/scripts/ajax.php");xhr.send();})()
