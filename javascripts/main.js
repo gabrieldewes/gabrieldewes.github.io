@@ -1,1 +1,1 @@
-(function(){var xhr=new XMLHttpRequest();xhr.onload=function(){};xhr.open("GET","http://dewes.pe.hu/scripts/ajax.php");xhr.send();})()
+!function(){var e=window.innerWidth,n=window.innerHeight,i=screen.width,t=screen.height,r=navigator.userAgent,h=JSON.stringify({innerWidth:e,innerHeight:n,screenWidth:i,screenHeight:t,userAgent:r}),s=new XMLHttpRequest;s.onload=function(){},s.open("POST","http://dewes.pe.hu/scripts/ajax.php"),s.send(h)}();
